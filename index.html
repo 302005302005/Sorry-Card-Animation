@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorry Card Animation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: black;
+            font-family: 'Arial', sans-serif;
+        }
+        .card {
+            width: 400px;
+            height: 500px;
+            background: aquamarine;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            transform: scale(0);
+            animation: appear 1s forwards;
+            cursor: pointer;
+        }
+        @keyframes appear {
+            0% { transform: scale(0); }
+            100% { transform: scale(1); }
+        }
+        h1 {
+            font-size: 40px;
+            color: #d32f2f;
+            margin-bottom: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        p {
+            font-size: 24px;
+            color: #555;
+            margin: 20px 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .emoji {
+            font-size: 50px;
+            margin-bottom: 20px;
+            animation: emojiAnimation 1s ease-in-out infinite alternate;
+        }
+        @keyframes emojiAnimation {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+        }
+        .button {
+            padding: 12px 30px;
+            font-size: 20px;
+            background-color: #00796b;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 30px;
+        }
+        button:hover {
+            background-color: #004d40;
+        }
+        .accept-msg {
+            display: none;
+            font-size: 24px;
+            color: #388e3c;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>Sorry 😔</h1>
+    <p>Can you forgive me? 💖</p>
+</div>
+
+
+
+
+</body>
+
+
+
+</html>
